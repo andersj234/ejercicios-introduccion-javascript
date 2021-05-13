@@ -8,13 +8,21 @@
 </head>
 <body>
     <script>
-        let numero1 = parseInt(window.prompt('Escoge un numero'));
+        /*let numero1 = parseInt(window.prompt('Escoge un numero'));
         let numero2 = parseInt(window.prompt('Escoge otro numero'));
-        ((numero1+numero2)-numero2)
         console.log('el valor inicial de numero1 es: '+ numero1)
         console.log('el valor inicial de numero2 es: '+ numero2)
         console.log('el valor final de numero1 es: '+((numero1+numero2)-numero1))
-        console.log('el valor final de numero2 es: '+((numero1+numero2)-numero2))
+        console.log('el valor final de numero2 es: '+((numero1+numero2)-numero2))*/ //no me pide esto me pide que cambie intercambien sus valores por ejemplo que numero1 tenga el valor de numero2
+
+        let numero1 = parseInt(window.prompt('Escoge un numero'));
+        let numero2 = parseInt(window.prompt('Escoge otro numero'));
+        let numero3 = numero1;
+        numero1 = numero2;
+        numero2 = numero3;
+        console.log(`Los valores finales eran ${numero1} y ${numero2}`);
+        
+        
         
     </script>
 </body>

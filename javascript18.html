@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let seg = parseInt(window.prompt('Introduce los segundos')); // version mas corta
+        let horas = parseInt(seg/3600);
+        let min = parseInt((seg/60)/10);
+        let segundos = parseInt((horas%0.6)*100)
+
+        console.log(`${horas} horas: ${min} minutos:  ${segundos} segundos:`);
+
+        /*let minutos =parseInt(seg/60)
+        let horas =parseInt(minutos/60)
+
+
+        console.log(`${horas} horas: ${minutos} minutos:  ${segundos} segundos:`);*/ // asi tambien valdria con los seg que ha introducido con el window.prompt()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero= parseInt(window.prompt('Escribe el numero en minutos'))
+        let anyos   =numero%525600
+        let anyos2 = numero/525600  
+        let dias = anyos/1440
+
+        console.log(parseInt(anyos2)+ " años "+ parseInt(dias)+ " dias ")
+        /*let horas =parseInt(numero/60)
+        let anyos2 = parseInt((horas/24)/365)
+        let dias = parseInt((horas/24)%365)
+
+        console.log(parseInt(anyos2)+ " años "+ parseInt(dias)+ " dias ")*/
+
+    </script>
+</body>
+</html>

@@ -8,13 +8,17 @@
 </head>
 <body>
     <script>
-        let metros =parseInt(window.prompt('escoge una distancia en metros'))
-        let tiemposegundos =parseInt(window.prompt('escoge una cantidad de tiempo en segundos'))
-        let calculo =(metros/tiemposegundos)*3600/1000
-        console.log('es una velocidad de '+metros/tiemposegundos +' metros por segundo')
-        console.log('es una velocidad de '+calculo +' kilometros por hora')
-        
-        
+        let x =parseInt(window.prompt('Introduzca la distancia recorrida en metros'))
+        let tiempoH =parseInt(window.prompt('Introduzca el tiempo en horas'))
+        let tiempoM =parseInt(window.prompt('Introduzca el tiempo en minutos'))
+        let tiempoS =parseInt(window.prompt('Introduzca el tiempo en segundos'))
+
+        let t1= tiempoH*3600 + tiempoM*60 +tiempoS
+        let t2=tiempoH+tiempoM/60 + tiempoS/3600
+        let y=x/1000
+
+        console.log('la velocidad en metros segundos es '+x/t1)
+        console.log('la velocidad en kilometros hora es '+y/t2)
     </script>
 </body>
 </html>
